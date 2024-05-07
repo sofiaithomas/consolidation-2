@@ -34,3 +34,7 @@ def play_game():
             dice = roll_dice()
             print("These are your rolled die: ", dice)
             # up to here if runs infinitely displaying your rolled dice, now need to update the score so it doesn't run forever
+
+            # if statement for tupling
+            if dice[0] == dice[1] == dice[2]:
+                print("Uh oh you have tupled! You get 0 points to your score this round")
