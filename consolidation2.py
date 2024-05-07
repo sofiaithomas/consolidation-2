@@ -1,4 +1,5 @@
 # Tuple out Game
+# Idea for advanced topic: histogram graph with matplotlib for frequency of numbers rolled
 import random
 end_score = 50
 
@@ -13,3 +14,7 @@ def roll_dice():
         dice.append(random.randint(1,6))
         count += 1
     return dice
+
+# function to run the actual game
+def play_game():
+    
