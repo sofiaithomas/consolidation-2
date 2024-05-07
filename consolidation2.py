@@ -28,5 +28,6 @@ def play_game():
         while True:
             dice = roll_dice()
             print("These are your rolled die: ", dice)
+            # up to here if runs infinitely displaying your rolled dice, now need to update the score so it doesn't run forever
 
 play_game()
