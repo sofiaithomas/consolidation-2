@@ -20,3 +20,5 @@ def roll_dice():
 # function to run the actual game
 def play_game():
     # score for players
+    # basically will make a score list of scores = [0] or [0,0] if there is 2 players
+    scores = [0] * num_players
