@@ -19,9 +19,8 @@ def roll_dice():
     return dice
 
 # function to run the actual game
-def play_game(num_player):
+def play_game(num_players):
     # score for players
     # basically will make a score list of scores = [0] or [0,0] if there is 2 players
     scores = [0] * num_players
     while max(scores) < 50:
-        
