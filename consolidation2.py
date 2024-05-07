@@ -23,3 +23,5 @@ def play_game():
     # score for players
     # basically will make a score list of scores = [0] or [0,0] if there is 2 players
     scores = [0] * num_players
+    while max(scores) < 50:
+        print(" ")
