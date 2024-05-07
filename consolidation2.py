@@ -20,6 +20,11 @@ def roll_dice():
 
 # function to run the actual game
 def play_game():
+    '''
+    While the players score is less than 50 the function uses the roll dice function to generate rolls each time
+    It adds the limits of tupling in the game and allows for rerolls
+    Adds the rolled dice and adds it to the players score prior to the next roll.
+    '''
     # score for players
     # basically will make a score list of scores = [0] or [0,0] if there is 2 players
     scores = [0] * num_players
@@ -29,5 +34,3 @@ def play_game():
             dice = roll_dice()
             print("These are your rolled die: ", dice)
             # up to here if runs infinitely displaying your rolled dice, now need to update the score so it doesn't run forever
-
-play_game()
