@@ -9,6 +9,7 @@ num_players = int(input("How many players will be playing: 1 or 2"))
 
 # a function for rolling the die would be more efficient than 3 different variables
 def roll_dice():
+    count = 0
     # empty list for dice
     dice = []
     #needs to run 3 times
