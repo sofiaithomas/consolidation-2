@@ -5,7 +5,7 @@ end_score = 50
 
 print("Welcome to the 'Tuple Out' dice game! ")
 # Going to need to ask how many players
-num_players = int(input("How many players will be playing: 1 or 2"))
+num_players = int(input("How many players will be playing: 1 or 2: "))
 
 # a function for rolling the die would be more efficient than 3 different variables
 def roll_dice():
@@ -19,9 +19,9 @@ def roll_dice():
     return dice
 
 # function to run the actual game
-def play_game():
+def play_game(num_player):
     # score for players
     # basically will make a score list of scores = [0] or [0,0] if there is 2 players
     scores = [0] * num_players
     while max(scores) < 50:
-        print(" ")
+        
