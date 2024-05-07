@@ -38,3 +38,5 @@ def play_game():
             # if statement for tupling
             if dice[0] == dice[1] == dice[2]:
                 print("Uh oh you have tupled! You get 0 points to your score this round")
+                player_score = 0
+                break
