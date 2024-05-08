@@ -38,6 +38,10 @@ def play_game():
                 print("Uh oh you have tupled! You get 0 points to your score this round")
                 player_score = 0
                 break
+
+            if die[0] == dice[1] or dice[1] == dice[2] or dice[2] == dice[0]:
+                print("The two dice with the same number are fixed")
+                reroll_choice = input("Do you want to re-roll the non-fixed die")
             
             choice = input("Do you want to reroll any dice? (y or n): ").lower()
             if choice != 'y':
