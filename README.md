@@ -17,3 +17,14 @@ First, you must download the program itself, which you can easily do here on Git
 Next, open your terminal
 Remember to type python prior to the programs name to get it running
 After that, start playing and have fun!
+
+Author:
+-------------------------------------------------------------------------------------------------------
+Sofia Thomas
+
+License:
+-------------------------------------------------------------------------------------------------------
+This project is under MIT License - see the included LICENSE.txt file if you would like more specific details on the license
+
+Attributions and Resources:
+-------------------------------------------------------------------------------------------------------
