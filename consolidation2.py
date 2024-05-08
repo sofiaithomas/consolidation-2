@@ -40,3 +40,8 @@ def play_game():
                 print("Uh oh you have tupled! You get 0 points to your score this round")
                 player_score = 0
                 break
+            
+            choice = input("Do you want to reroll any dice? (y or n): ").lower()
+            if choice != 'y':
+                player_score += sum(dice)
+                break
