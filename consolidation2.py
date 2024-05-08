@@ -19,7 +19,7 @@ def roll_dice():
     return dice
 
 # function to run the actual game
-def play_game():
+def play_game(num_players):
     '''
     While the players score is less than 50 the function uses the roll dice function to generate rolls each time
     It adds the limits of tupling in the game and allows for rerolls
@@ -45,3 +45,5 @@ def play_game():
             if choice != 'y':
                 player_score += sum(dice)
                 break
+    print("You finally hit 50 points!")
+    
