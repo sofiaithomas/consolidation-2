@@ -1,11 +1,9 @@
 # Tuple out Game
 # Idea for advanced topic: histogram graph with matplotlib for frequency of numbers rolled
 import random
-end_score = 50
 
 print("Welcome to the 'Tuple Out' dice game! ")
 # Going to need to ask how many players
-num_players = int(input("This is a single player game - Type 1: "))
 
 # a function for rolling the die would be more efficient than 3 different variables
 def roll_dice():
@@ -19,17 +17,17 @@ def roll_dice():
     return dice
 
 # function to run the actual game
-def play_game(num_players):
+def play_game():
+    score = 0
     '''
     While the players score is less than 50 the function uses the roll dice function to generate rolls each time
     It adds the limits of tupling in the game and allows for rerolls
     Adds the rolled dice and adds it to the players score prior to the next roll.
     '''
-    # score for players
-    # basically will make a score list of scores = [0] or [0,0] if there is 2 players
-    scores = [0] * num_players
-    while max(scores) < 50:
+
+    while score < 50:
         player_score = 0
+
         while True:
             dice = roll_dice()
             print("These are your rolled die: ", dice)
@@ -45,5 +43,10 @@ def play_game(num_players):
             if choice != 'y':
                 player_score += sum(dice)
                 break
-    print("You finally hit 50 points!")
-    
+        score += player_score
+        print(f"You have a score of: {score}")
+        print(".")
+    print(f"Yay! You got over 50 points with a score of {score}")
+
+
+play_game()
