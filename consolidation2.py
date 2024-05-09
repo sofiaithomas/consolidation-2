@@ -69,12 +69,9 @@ def play_game():
             print("----------------------------")
 
         score += player_score
-                        
     print(f"Yay! You got over 50 points with a score of {score}")
     return all_dice
 
-    dice_numbers = list(dice_dictionary.keys())
-    dice_counts = list(dice_dictionary.values())
 
 dice_rolled = play_game()
 
