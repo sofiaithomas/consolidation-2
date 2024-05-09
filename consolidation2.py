@@ -1,8 +1,9 @@
 # Tuple out Game
 # Idea for advanced topic: histogram graph with matplotlib for frequency of numbers rolled
 import random
-import pandas as pd
-import matplotlib.pyplot as plt
+# import pandas as pd
+# import matplotlib.pyplot as plt
+import plot_results
 
 print("Welcome to the 'Tuple Out' dice game! ")
 # Going to need to ask how many players
