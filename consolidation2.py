@@ -67,21 +67,15 @@ def play_game():
             
             print(f"Your score is: {score + player_score}")
             print("----------------------------")
-        
+
         score += player_score
                         
     print(f"Yay! You got over 50 points with a score of {score}")
-    dice_dictionary = {"1" : all_dice.count(1),
-                       "2" : all_dice.count(2),
-                       "3" : all_dice.count(3),
-                       "4" : all_dice.count(4),
-                       "5" : all_dice.count(5),
-                       "6" : all_dice.count(6)}
-    
+    return all_dice
+
     dice_numbers = list(dice_dictionary.keys())
     dice_counts = list(dice_dictionary.values())
 
-    dice_data = {"dice number" : dice_numbers,
-                 "count of number" : dice_counts}
-    
+dice_rolled = play_game()
+
 plot_results.plot_dice(dice_rolled)
