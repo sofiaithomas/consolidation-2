@@ -84,9 +84,4 @@ def play_game():
     dice_data = {"dice number" : dice_numbers,
                  "count of number" : dice_counts}
     
-    dice_dataframe = pd.DataFrame(data = dice_data)
-    # graph histogram
-    plt.bar(x = "dice number", height = "count of number", data = dice_dataframe)
-    plt.show()
-play_game()
-
+plot_results.plot_dice(dice_rolled)
