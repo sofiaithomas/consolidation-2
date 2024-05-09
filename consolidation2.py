@@ -1,6 +1,7 @@
 # Tuple out Game
 # Idea for advanced topic: histogram graph with matplotlib for frequency of numbers rolled
 import random
+import matplotlib.pyplot as plt
 
 print("Welcome to the 'Tuple Out' dice game! ")
 # Going to need to ask how many players
@@ -27,11 +28,13 @@ def play_game():
 
     while score < 50:
         player_score = 0
+        all_dice = []
 
         while True:
             dice = roll_dice()
             print("These are your rolled die: ", dice)
             # up to here if runs infinitely displaying your rolled dice, now need to update the score so it doesn't run forever
+            all_dice.append(dice)
             player_score += sum(dice)
 
             # if statement for tupling
@@ -49,6 +52,7 @@ def play_game():
                     reroll_die = int(input("Which die in the set is being re-rolled: 1, 2, or 3"))
                     dice[reroll_die - 1] = random.randint(1,6)
                     print("Your dice with the new re-rolled:", dice)
+                    all_dice.append(dice)
 
                     if dice[0] == dice[1] == dice[2]:
                         print("Uh oh you have tupled! You get 0 points to your score this round")
