@@ -1,5 +1,3 @@
-README.file
-
 Project Title: "Tuple Out" Dice Game
 
 Description:
