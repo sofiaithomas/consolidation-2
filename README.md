@@ -28,3 +28,4 @@ This project is under MIT License - see the included LICENSE.txt file if you wou
 
 Attributions and Resources:
 -------------------------------------------------------------------------------------------------------
+Professor Scott Jackson, Data Analysis Examples - https://github.com/scottrjackson/data_analysis_0101/blob/main/data_analysis_examples.py 
